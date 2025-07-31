@@ -688,9 +688,23 @@ def run():
                             'link': 'https://www.indeed.com/viewjob?jk=296abc17c98a0535&tk=1j1e0gqc6goos82n&from=serp&vjs=3',
                         
                         }
+                        job1 = {
+                            'title': 'Staff Data Scientist',
+                            'company': 'Zynga',
+                            'location': 'Austin, TX',
+                            'link': 'https://www.indeed.com/viewjob?jk=3f56b1d0c9c29521&tk=1j1f50ttuj2qh86b&from=serp&vjs=3',
+                        
+                        }
+                        job2 = {
+                            'title': 'Data Scientist',
+                            'company': 'Atlassian',
+                            'location': 'Remote',
+                            'link': 'https://www.indeed.com/viewjob?jk=9407080179c25a0b&tk=1j1f8k8g4i0jf82h&from=serp&vjs=3',
+                        }    
+                    
                     
                         
-                        filtered_jobs = [upwork_job, linkedin_job, indeed_job,job] + filtered_jobs
+                        filtered_jobs = [upwork_job, linkedin_job, indeed_job,job,job1] + filtered_jobs
                         if filtered_jobs:
                             st.success(f"Found {len(filtered_jobs)} Data Scientist job recommendations!")
                             for i, job in enumerate(filtered_jobs, 1):
@@ -772,30 +786,40 @@ def run():
                             st.info("💡 **Note:** Only web developer jobs are shown based on your resume and real-time data. Always verify job details before applying.")
                         else:
                             st.warning("No web developer job recommendations found at the moment.")
-                            st.info("💡 **Tip:** Try uploading a resume with more specific data science skills to get better job matches.")
+                            st.info("💡 **Tip:** Try uploading a resume with more specific web development skills to get better job matches.")
                     elif main_job_title == 'jackson macarthur':
                         filtered_jobs = [job for job in combined_jobs if "jackson macarthur" in job['title'].lower()]
-                        upwork_job = {
+                        indeed_job = {
+                            'title': 'Lecturer - Web Development and Database Management',
+                            'company': 'British College',
+                            'location': 'Trade Tower, Thapathali, Kathmandu',
+                            'link': 'https://merojob.com/lecturer-web-development-and-database-management/',
+                        }
+                        upwork = {
                             'title': 'Junior Web Designer',
                             'company': 'Thulo',
                             'location': 'Jwagal, Kupondole',
                             'link': 'https://merojob.com/junior-web-designer-entry-level/',
                     
                         }
-                        linkedin_job = {
-                            'title': 'Webmaster / Web Developer',
-                            'company': 'PCDUE',
-                            'location': 'Remote',
-                            'link': 'https://merojob.com/experienced-webmaster-web-developer-wordpress-cms-ecommerce-security-hosting/',
-                    
-                        }
-                        indeed_job = {
-                            'title': 'Lecturer - Web Development and Database Management',
-                            'company': 'British College',
-                            'location': 'Trade Tower, Thapathali, Kathmandu',
-                            'link': 'https://merojob.com/lecturer-web-development-and-database-management/',
+                        job2 = {
+                            'title': ' Web Developerr',
+                            'company': 'Texas Tech University',
+                            'location': '2500 Broadway, Lubbock, TX 79409',
+                            'link': 'https://www.indeed.com/viewjob?jk=1a353fb9a10fa5bd&tk=1j1e57jg5ggn7868&from=serp&vjs=3',
                         
                         }
+                       
+                        job3 = {
+                            'title': 'Web Designer/Programmer',
+                            'company': 'Connexc MultiMedia',
+                            'location': 'Tampa, FL',
+                            'link': 'https://www.indeed.com/viewjob?jk=cc69ebd2e83c875d&tk=1j1f752ihjqji86i&from=serp&vjs=3',
+                    
+                        }
+                        
+                       
+
                         indeed = {
                             'title': 'Entry Level Web developer',
                             'company': 'WTJ Corporation',
@@ -810,23 +834,10 @@ def run():
                             'link': 'https://www.indeed.com/viewjob?jk=0ad251515c92c757&tk=1j1e57jg5ggn7868&from=serp&vjs=3',
                         
                         }
-                        job2 = {
-                            'title': ' Web Developerr',
-                            'company': 'Texas Tech University',
-                            'location': '2500 Broadway, Lubbock, TX 79409',
-                            'link': 'https://www.indeed.com/viewjob?jk=1a353fb9a10fa5bd&tk=1j1e57jg5ggn7868&from=serp&vjs=3',
+                      
+    
                         
-                        }
-                        upwork = {
-                            'title': 'Junior Web Designer',
-                            'company': 'Thulo',
-                            'location': 'Jwagal, Kupondole',
-                            'link': 'https://merojob.com/junior-web-designer-entry-level/',
-                    
-                        }
-                    
-                        
-                        filtered_jobs = [upwork_job, linkedin_job, indeed_job,upwork,job1,job2,indeed] + filtered_jobs
+                        filtered_jobs = [indeed_job,job3,upwork,job1,job2,indeed] + filtered_jobs
                         if filtered_jobs:
                             st.success(f"Found {len(filtered_jobs)} Web Developer job recommendations!")
                             for i, job in enumerate(filtered_jobs, 1):
@@ -863,8 +874,32 @@ def run():
                             'location': 'Remote',
                             'link': 'https://www.indeed.com/viewjob?jk=78733b3b39b19a12&tk=1j1e23levgql5842&from=serp&vjs=33',
                         }
+                        job = {
+                            'title': 'Android Developer',
+                            'company': 'JPLoft',
+                            'location': 'Denver, CO',
+                            'link': 'https://www.indeed.com/viewjob?jk=8908d1060606454d&tk=1j1f55arkiv9u85r&from=serp&vjs=3',
+                        }
+                        job1 = {
+                            'title': 'Android Developer',
+                            'company': 'Your Mail',
+                            'location': 'Denver, CO',
+                            'link': 'https://www.indeed.com/viewjob?jk=4b96f1c700bb34c5&tk=1j1f55arkiv9u85r&from=serp&vjs=3',
+                        }
+                        job2= {
+                            'title': 'Flutter App  Developer',
+                            'company': 'JPLoft',
+                            'location': 'Denver, CO',
+                            'link': 'https://www.indeed.com/viewjob?jk=3860e1d1affd536f&tk=1j1f87ikij3ns85c&from=serp&vjs=3',
                         
-                        filtered_jobs = [linkedin_job, indeed_job, indeed_job2] + filtered_jobs
+                        }
+                        job3 = {
+                            'title': 'Android App  Developer',
+                            'company': 'Corporate Tools',
+                            'location': 'Remote',
+                            'link': 'https://www.indeed.com/viewjob?jk=78733b3b39b19a12&tk=1j1e23levgql5842&from=serp&vjs=3',
+                        }
+                        filtered_jobs = [linkedin_job, indeed_job, indeed_job2,job,job1,job2,job3] + filtered_jobs
                         if filtered_jobs:
                             st.success(f"Found {len(filtered_jobs)} Android Developer job recommendations!")
                             for i, job in enumerate(filtered_jobs, 1):
